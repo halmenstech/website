@@ -1,0 +1,269 @@
+.navbar{
+  background-color: #ffffff;
+}
+
+.nav-link{
+  font-size: large;
+}
+
+.navbar-nav{
+   padding-right: 35%;
+}
+
+.nav-item{
+  margin-left: 2%;
+}
+
+body {
+  background-color: #f0f2f5;
+  margin: 0%;
+}
+
+h1 {
+  font-family: montserrat, 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  margin-top: 3%;
+}
+
+.h6{
+  font-size: large;
+  font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  color: #f0f2f5;
+}
+
+p {
+  font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-size: medium;
+}
+
+.portfolio{
+  padding-top: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 20%;  
+  font-family: montserrat, 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-size: xx-large;
+  font-weight: bolder;
+  text-indent:center;
+  text-align: center;
+}
+
+.politicas{
+  padding-top: 20%;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-bottom: 20%;  
+  font-family: montserrat, 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+  text-indent:center;
+  text-align: center;
+}
+
+.titulos{
+  justify-content: center;
+  text-align: start; 
+  font-family: montserrat, 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  color: #00467d;
+}
+
+.lista_ordenada{
+  padding-right: 15%;
+  font-size:larger;
+  text-indent:justify;
+  text-align: justify;
+  list-style: none;
+}
+
+.buttons{
+  gap: 15px;
+  margin-right: 20px;  
+  align-items: end;
+}
+
+.bi{
+  color: #0078d4;  
+  font-size: 23px;
+  margin-right: 12px;
+}
+
+.about{  
+  word-spacing: 2px;
+  line-height: 180%;
+  font-size:larger;
+  text-indent:justify;
+  text-align: justify;
+  font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+.link{
+ 
+  color: #00467d;
+  font-weight: bold;
+  font-family:  'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+.footer{  
+  display:grid;    
+  text-align:start ;     
+  width: auto;
+  color: rgb(255, 255, 255);
+  font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  padding: 25px;     
+  margin: 0%;
+  background: linear-gradient(to bottom, rgb(18, 38, 83), rgb(1, 32, 116));
+  font-size: medium;   
+  align-items: center;
+  columns: 12;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; 
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 15%;
+  gap: 5%;
+}
+
+
+.card{
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  color: black;
+  background-color: #f0f2f5;
+  padding: 2%;
+}
+
+.icard{
+  border-radius: 5px;
+}
+
+.endereco{
+   font-size:medium;
+   font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+.contato{
+  font-size: medium;
+  font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;;
+}
+
+.inicial{  
+  font-size: larger;
+  font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  text-align: start;
+  padding-top: 2%;
+}
+
+.sessao{
+ padding-left: 12%;
+ padding-right: 12%;
+ background-color: #f0f2f5;
+}
+
+.info{
+  text-align: start;
+  background-image: url(imagem/COVER-CONTATO.jpg);
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover;
+  background-attachment: fixed;
+  width: auto;
+  height: auto;
+}
+
+#apresentacao{
+  padding-top: 2%;
+}
+
+#servicos{
+  padding-bottom: 3%;
+}
+
+.formulario{
+  margin-left: 12%;
+  margin-right: 12%; 
+  background-color: #ffffff;
+}
+
+.form_bg{
+  background-image: url(imagem/FORMULARIO.jpg);
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover;
+  background-attachment: fixed;
+  width: auto;
+  height: auto;
+}
+
+.lista{
+  font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  list-style-type:none;
+}
+
+.copyright{
+  align-items: center;
+}
+
+.ftitulo{
+  align-items: center;
+  text-align: center;
+  font-size: medium;
+  font-family: montserrat, 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+@media (max-width: 767px) { /* Ponto de quebra comum para mobile */
+  .footer {
+      padding: 20px 0; /* Ajusta o padding do footer para mobile, sem padding lateral */
+  }
+
+  .ftitulo {
+      padding: 0 15px; /* Padding ajustado para o título do footer no mobile */
+  }
+
+  .grid-container {
+      grid-template-columns: 1fr; /* Transforma em uma única coluna */
+      margin-left: 0; /* REMOVE A MARGEM ESQUERDA QUE CAUSA O OVERFLOW/CORTE */
+      padding: 0 20px; /* Adiciona um padding interno para que o conteúdo não cole nas bordas da tela */
+      gap: 30px; /* Aumenta o espaço entre os blocos (email, serviços, social) quando empilhados */
+  }
+
+  .grid-container > div { /* Aplica a todas as divs filhas diretas do grid-container */
+      text-align: center; /* Centraliza o texto de cada seção (contato, serviços, social) */
+  }
+
+  .contato .row { /* Ajusta a row dentro do contato para centralizar */
+      justify-content: center; /* Centraliza o email e telefone se forem flex items */
+      flex-direction: column; /* Garante que email e telefone fiquem um abaixo do outro */
+      align-items: center; /* Centraliza os itens verticalmente */
+  }
+
+  .lista {
+      padding-left: 0; /* Remove o padding padrão da ul, para poder centralizar */
+      list-style-type: none; /* Opcional: remove os bullets */
+  }
+
+  .lista li {
+      text-align: center; /* Centraliza cada item da lista de serviços */
+      margin-bottom: 5px; /* Adiciona um pouco de espaço entre os itens da lista */
+  }
+
+  .copyright {
+      padding: 0 15px; /* Adiciona um padding para o copyright no mobile */
+  }
+
+  /* Ajustes para as imagens das redes sociais */
+  .grid-container > div:last-child { /* A div dos ícones sociais é a última no grid-container */
+      text-align: center;
+  }
+  .grid-container > div:last-child img {
+      margin: 0 5px; /* Adiciona um pouco de espaço entre os ícones */
+  }
+}

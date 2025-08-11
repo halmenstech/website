@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orçamento</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="halmenstech.css">
+<style>
+  .whatsapp{position: fixed; bottom: 10px; right:10px; z-index: 9999;}      
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="icon" href="imagem/FaviconLogo.jpg" type="image/x-icon">
+<link rel="shortcut icon" href="imagem/FaviconLogo.jpg" type="image/x-icon">
+</head>
+<header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="halmenstech.html">
+        <img src="imagem/logotipo/400JpgdpiLogoCropped.jpg" alt="logotipo" width="auto" height="20px" target="_blank">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>     
+      
+      <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="servicos.html">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfólio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">Contato</a>
+          </li> 
+        </ul>    
+        <div class="buttons d-flex">
+          <a href="https://www.instagram.com/halmenstech/"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.facebook.com/halmenstech/"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.linkedin.com/company/halmenstech/about/"><i class="bi bi-linkedin"></i></a>
+          <a class="btn btn-primary align-content-center gap-5" href="orcamento.html" role="button">Solicite Orçamento</a>
+        </div>
+      </div>       
+    </div>    
+  </nav>
+</header>
+<body class="form_bg">
+  <section class = "container-fluid bg-whitesmoke p-2">    
+      <span class="border-secondary-subtle">
+        <form class="formulario mt-3" method="POST" action="https://formspree.io/f/xblkywvz" id="formOrcamento" autocomplete="off">
+          <h1 class="text-center titulos pt-5">Solicite seus Serviços</h1>
+          <div id="form-messages" class="alert alert-danger d-none mt-3" role="alert"></div>
+          <fieldset class="p-4">
+            <legend style="color: #0078d4; font-weight: bold; font-weight: bold; font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;">Dados pessoais</legend>
+              
+              <div class="mb-3">
+                <label class="form-label" for="nome">Nome</label><br>
+                <input type="text" required class="form-control" name="Nome" placeholder="digite seu nome" id="nome"><br><br>
+              </div>
+              
+              <div class="mb-3">
+                <label class="form-label" for="email">E-mail</label><br>
+                <input type="email" required name="E-mail" placeholder="exemplo@email.com" id="email" class="form-control"><br><br>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label" for="phone">Telefone</label><br>
+                <input type="text" required name="Telefone" placeholder="(xx) xxxxx-xxxx" id="phone" class="form-control"><br><br>
+              </div>
+          </fieldset>              
+          
+          <fieldset class="p-4">
+            <legend style="color: #0078d4; font-weight: bold; font-weight: bold; font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;">Selecione os serviços que deseja contratar</legend>
+              
+              <div class="form-check">
+                <label class="form-check-label" for="sessao_fotos">Suporte Técnico Especializado</label>
+                <input type="checkbox" class="form-check-input" name="servico[]" value="Suporte_Tecnico_Especializado">
+              </div>
+              
+              <div class="form-check">
+                <label class="form-check-label" for="filmagem">Infraestrutura de Redes</label>
+                <input type="checkbox" class="form-check-input" name="servico[]" value="Infraestrutura_de_Redes">
+              </div>
+              
+              <div class="form-check">
+                <label class="form-check-label" for="evento">Gerenciamento de Servidores</label>
+                <input type="checkbox" class="form-check-input" name="servico[]" value="Gerenciamento_de_Servidores">
+              </div>
+
+              <div class="form-check">
+                <label class="form-check-label" for="sessao_fotos">Manutenção de Hardware e Software</label>
+                <input type="checkbox" class="form-check-input" name="servico[]" value="Manutencao_de_Hardware_e_Software">
+              </div>
+              
+              <div class="form-check">
+                <label class="form-check-label" for="filmagem">Cibersegurança</label>
+                <input type="checkbox" class="form-check-input" name="servico[]" value="Ciberseguranca">
+              </div>
+              
+              <div class="form-check">
+                <label class="form-check-label" for="evento">Backup e Recuperação de Dados</label>
+                <input type="checkbox" class="form-check-input" name="servico[]" value="Backup_e_Recuperacao_de_Dados">
+              </div>
+
+              <div class="form-check">
+                <label class="form-check-label" for="sessao_fotos">Monitoramento Proativo de TI</label>
+                <input type="checkbox" class="form-check-input" name="servico[]" value="Monitoramento_Proativo_de_TI">
+              </div>
+              
+              <div class="form-check">
+                <label class="form-check-label" for="filmagem">Dashboards e Análise de Desempenho</label>
+                <input type="checkbox" class="form-check-input" name="servico[]" value="Dashboards_e_Análise_de_Desempenho">
+              </div>
+              
+              <div class="form-check">
+                <label class="form-check-label" for="evento">Gestão de Serviços e Ativos de TI (ITSM)</label>
+                <input type="checkbox" class="form-check-input" name="servico[]" value="Gestão_de_Serviços_e_Ativos_de_TI_(ITSM)">
+              </div>
+
+              <div class="form-check">
+                <label class="form-check-label" for="sessao_fotos">Controle de Acesso Físico e Lógico</label>
+                <input type="checkbox" class="form-check-input" name="servico[]" value="Controle_de_Acesso_Físico_e_Lógico">
+              </div>
+              
+              <div class="form-check">
+                <label class="form-check-label" for="filmagem">Controle de Ponto Eletrônico</label>
+                <input type="checkbox" class="form-check-input" name="servico[]" value="Controle_de_Ponto_Eletrônico">
+              </div>
+              
+              <div class="form-check">
+                <label class="form-check-label" for="evento">Consultoria Estratégica de TI</label>
+                <input type="checkbox" class="form-check-input" name="servico[]" value="Consultoria_Estratégica_de_TI">
+              </div>
+
+              <div class="form-check">
+                <label class="form-check-label" for="sessao_fotos">Serviços em Cloud</label>
+                <input type="checkbox" class="form-check-input" name="servico[]" value="Servicos_em_Cloud">
+              </div>
+              
+              <div class="form-check">
+                <label class="form-check-label" for="filmagem">Otimização de Desempenho</label>
+                <input type="checkbox" class="form-check-input" name="servico[]" value="Otimizacao_de_Desempenho">
+              </div>
+              
+              <div class="form-check">
+                <label class="form-check-label" for="evento">Soluções de Voz (VoIP)</label>
+                <input type="checkbox" class="form-check-input" name="servico[]" value="Solucoes_de_Voz_(VoIP)">
+              </div>             
+          </fieldset>
+
+          <fieldset class="p-4">
+            <legend style="color: #0078d4; font-weight: bold; font-weight: bold; font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;">Local</legend>
+              
+              <div class="form-check">
+                <label class="form-check-label" for="residencial">Coleta em endereço residencial</label>
+                <input type="radio" class="form-check-input" name="local" value="Coleta_em_endereço_residencial">
+              </div>
+              
+              <div class="form-check">
+                <label class="form-check-label" for="comercial">Coleta em endereço comercial</label>
+                <input type="radio" class="form-check-input" name="local" value="Coleta_em_endereco_comercial">
+              </div>
+
+              <div class="form-check">
+                <label class="form-check-label" for="local">Serviço no local</label>
+                <input type="radio" class="form-check-input" name="local" value="Servico_no_local">
+              </div>
+              
+          </fieldset>
+
+          <fieldset class="p-4">
+            <legend style="color: #0078d4; font-weight: bold; font-weight: bold; font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;">Informações adicionais</legend>
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="Informacoes_adicionais"></textarea>
+              <label for="floatingTextarea">Opcional</label>
+            </div>
+          </fieldset>          
+              
+            <!-- Honeypot escondido -->
+            <div style="display:none;">
+              <label>Deixe em branco:</label>
+              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+            </div>
+          <p style="font-size: small; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-style: italic; margin-left: 3%;">*Se tiver problemas com o envio do formulário, entre em contato conosco diretamente através do WhatsApp ou E-mail.</p>
+              
+          <fieldset class="p-5">
+            <button type="submit" class="btn btn-primary" id="btnEnviar">Enviar</button>
+          </fieldset>
+        </form>  
+      </span>
+    </section>
+    
+    <div class="whatsapp">
+        <a href=" https://wa.me/5551981333459?text=Olá, vim do seu site e gostaria de mais informações sobre os serviços." target="_blank">
+        <img class="container-xxl" src="imagem/WHATSAPP.png" width="95" height="95" alt="Fale conosco no WhatsApp" title="Fale conosco no WhatsApp">
+        </a>
+    </div>
+    <footer class="footer">
+      <div class="container-fluid ">
+        <div class="ftitulo container-fluid">
+          <h4>HalmensTech - Soluções em Informática e Tecnologia da Informação</h4>
+          <br> 
+          <p> Não temos loja física! Atendemos no local nas cidades de Estância Velha e adjacências.</p>      
+        </div>          
+      </div>
+  
+      <div class="grid-container">      
+          <div class="contato mt-3">
+            <div class="row container-fluid">        
+              <p><i class="bi bi-envelope"></i>halmenstech@outlook.com</p>
+              <p><i class="bi bi-telephone"></i>(51)98133-3459</p>              
+            </div>        
+          </div>   
+  
+          <div class="mt-3">
+            <a class="alink" href="servicos.html"><i class="bi bi-pc"></i> Nossos Serviços</a>
+              <ul class="lista">
+                <li>Gestão de Infraestrutura de TI</li>
+                <li>Suporte Técnico Especializado</li>
+                <li>Soluções em Nuvem</li>
+                <li>Consultoria e Projetos de TI</li>
+                <li>Segurança da Informação</li>    
+              </ul> 
+          </div>
+          
+          <div class="container-fluid">
+              <a href="https://www.instagram.com/halmenstech/"><img class="img-fluid" src="imagem/instagram.webp" width="25px" height="auto"></img></a>
+              <a href="https://br.linkedin.com/company/halmenstech?trk=public_post_follow-view-profile"><img class="img-fluid" src="imagem/LinkedIn.png" width="25px" height="auto"></a>
+              <a href="https://www.facebook.com/people/HalmensTech/61550616338818/?mibextid=ZbWKwL"><img class="img-fluid" src="imagem/Facebook.png" width="25px" height="auto"></a>
+          </div>      
+      </div>
+      <div class="row m-3">
+        <a class="alink col text-end" href="politicas.html">Políticas de Privacidade</a> | <a class="alink col" href="politicas.html">Termos de Uso</a>
+      </div>
+      <div class="container-fluid text-center"><br>
+        <div class="copyright">
+          &copy; 2025 HalmensTech - Todos os direitos reservados. Desenvolvido por Joana Caroline Ferreira Halmenschlager.
+        </div>          
+      </div>
+    </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- SCRIPT DE VALIDAÇÃO FINAL E CORRETO (COM SCROLL E VALIDAÇÃO DE REPETIÇÃO) -->
+<script>
+  $(document).ready(function() {
+  
+      // --- MÁSCARA DE TELEFONE ---
+      var maskBehavior = function(val) {
+          return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+      };
+      var options = {
+          onKeyPress: function(val, e, field, options) {
+              field.mask(maskBehavior.apply({}, arguments), options);
+          }
+      };
+      $('#phone').mask(maskBehavior, options);
+  
+      // --- FUNÇÕES DE VALIDAÇÃO ---
+      const dddsValidos = [
+          '11', '12', '13', '14', '15', '16', '17', '18', '19', '21', '22', '24', '27', '28', '31', '32', '33', '34',
+          '35', '37', '38', '41', '42', '43', '44', '45', '46', '47', '48', '49', '51', '53', '54', '55', '61', '62',
+          '63', '64', '65', '66', '67', '68', '69', '71', '73', '74', '75', '77', '79', '81', '82', '83', '84', '85',
+          '86', '87', '88', '89', '91', '92', '93', '94', '95', '96', '97', '98', '99'
+      ];
+  
+      function validarNome(nome) {
+          if (nome.trim().length < 3) return "Por favor, insira seu nome completo (mínimo 3 caracteres).";
+          return true;
+      }
+  
+      function validarEmail(email) {
+          const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!regex.test(email)) return "Por favor, insira um endereço de e-mail válido.";
+          return true;
+      }
+  
+      function validarTelefone(telefone) {
+          const phoneDigits = telefone.replace(/\D/g, '');
+          // NOVA REGRA: Bloquear números com sequências repetidas (ex: 11111111111)
+          const regexRepetido = /^(\d)\1+$/;
+          if (regexRepetido.test(phoneDigits)) return "O número de telefone informado é inválido.";
+  
+          if (phoneDigits.length < 10 || phoneDigits.length > 11) return "O número de telefone deve ter 10 ou 11 dígitos (com DDD).";
+          const ddd = phoneDigits.substring(0, 2);
+          if (!dddsValidos.includes(ddd)) return "O DDD informado (" + ddd + ") não é um DDD válido no Brasil.";
+          if (phoneDigits.length === 11 && phoneDigits.substring(2, 3) !== '9') return "Celulares com 11 dígitos devem começar com o dígito 9.";
+          if (phoneDigits.length === 10 && phoneDigits.substring(2, 3) === '9') return "Telefones com 10 dígitos não podem começar com 9. Se for celular, falta um dígito.";
+          return true;
+      }
+  
+      // --- LÓGICA PRINCIPAL NO ENVIO DO FORMULÁRIO ---
+      $('#formOrcamento').on('submit', function(e) {
+          const formMessages = $('#form-messages');
+          
+          // Função para exibir erro e rolar a página
+          function exibirErro(mensagem) {
+              e.preventDefault();
+              formMessages.text(mensagem).removeClass('d-none');
+              // Rola a página suavemente até a mensagem de erro
+              $('html, body').animate({
+                  scrollTop: formMessages.offset().top - 80 // -80 para dar um espaço do topo
+              }, 500);
+          }
+  
+          formMessages.addClass('d-none').text('');
+  
+          let erro = null;
+  
+          // Executa todas as validações em ordem
+          erro = validarNome($('#nome').val());
+          if (erro !== true) {
+              exibirErro(erro);
+              return;
+          }
+  
+          erro = validarEmail($('#email').val());
+          if (erro !== true) {
+              exibirErro(erro);
+              return;
+          }
+  
+          if ($('input[name="servico[]"]:checked').length === 0) {
+              exibirErro("Por favor, selecione pelo menos um serviço.");
+              return;
+          }
+  
+          if ($('input[name="local"]:checked').length === 0) {
+              exibirErro("Por favor, selecione uma opção de local.");
+              return;
+          }
+          
+          erro = validarTelefone($('#phone').val());
+          if (erro !== true) {
+              exibirErro(erro);
+              return;
+          }
+          
+          // Se chegou aqui, tudo está válido e o envio prossegue.
+      });
+  });
+  </script>
+
+</body>
+</html>
