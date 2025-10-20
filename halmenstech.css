@@ -124,6 +124,12 @@ body, html {
   overflow-x: hidden; 
 }
 
+
+table {
+  border-collapse: separate; /* Essencial para que o border-spacing funcione */
+  border-spacing: 25px;      /* Define um espaçamento de 10px entre as células */
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
